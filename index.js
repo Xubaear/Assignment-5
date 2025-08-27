@@ -19,6 +19,10 @@ let coins = parseInt(coin.innerText);
 
 const callButtons = document.getElementsByClassName('call-btn');
 
+
+const historyBox = document.getElementById('history-sec');
+const clearBtn = document.getElementById('clear-btn');
+
 for(const btn of callButtons){
     btn.addEventListener('click', function(){
           const serviceName = this.getAttribute('data-service');
@@ -26,16 +30,24 @@ for(const btn of callButtons){
         if(coins >= 20){
             coins = coins - 20;
             coin.innerText = coins;
+
+historyBox.innerHTML += `
+        <div class="shadow-lg rounded-lg p-7 flex justify-between items-center font-semibold" >
+            <p>${serviceName} <br> ${serviceNumber}</p>
+             
+             <div>${new Date().toLocaleTimeString()}</div>
+        </div>`;
+
             alert(`Calling ${serviceName}.${serviceNumber}`);
         }else{
             alert('You are out of credit')
         }
+
+        
     })
 }
 
-
-//real time history update
-
+//clear history
 
 
 
