@@ -26,7 +26,7 @@
         </div>
         <div class="gap-3 flex md:gap-9 mr-7">
             <div class="flex items-center bg-[#d5f0db] w-20 h-10 rounded-xl justify-center"> 
-                <span>0</span> <img src=" assets/heart.png" class="h-4 ml-1">
+                <span id="heart-count">0</span> <img src=" assets/heart.png" class="h-4 ml-1">
             </div>
             <div class="flex items-center bg-[#d5f0db] font-semibold w-20 h-10 rounded-xl justify-center">
                 <span>100</span> <img src="assets/coin.png" class="h-4 ml-1">
@@ -45,7 +45,7 @@
              <div class="absolute  inset-0 flex flex-col justify-center items-center text-center" >
                <img src="assets/logo-dark.png"  class="w-25 h-25">
                <p class="text-white font-bold  mt-3">Emergency Service Directory</p>
-               <p class="text-white mt-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+               <p class="text-white mt-3">Government Emergency Services at Your Fingertip – A Project by <br class="md:hidden"> Government of the People’s Republic of Bangladesh</p>
               </div>
          </div>
        
@@ -60,7 +60,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">National Emergency Number</p>
       <p class="text-gray-400 text-[11px]">National Emergency</p>
@@ -75,7 +75,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-[#DFEFFF] w-12 h-8 rounded-lg"><img src="assets/police.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Police Helpline Number</p>
       <p class="text-gray-400 text-[11px]">Police</p>
@@ -90,7 +90,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/fire-service.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Fire Service Number</p>
       <p class="text-gray-400 text-[11px]">Fire Service</p>
@@ -105,7 +105,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/ambulance.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Ambulance Service</p>
       <p class="text-gray-400 text-[11px]">1994-999999</p>
@@ -120,7 +120,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Women & Child Helpline</p>
       <p class="text-gray-400 text-[11px]">Women & Child Helpline</p>
@@ -135,7 +135,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Anti-Corruption Helpline</p>
       <p class="text-gray-400 text-[11px]">Anti-Corruption</p>
@@ -150,7 +150,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Electricity Helpline</p>
       <p class="text-gray-400 text-[11px]">Electricity Outage</p>
@@ -165,7 +165,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Brac Helpline</p>
       <p class="text-gray-400 text-[11px]">Brac</p>
@@ -180,7 +180,7 @@
     <div class="bg-white p-4 rounded-lg shadow-sm">
       <div class="flex justify-between items-center mt-5">
         <div class="bg-pink-300 w-12 h-8 rounded-lg"><img src="assets/emergency.png" class="h-5 mx-auto mt-1.5"></div>
-        <i class="fa-regular fa-heart"></i>
+        <div class="heart-click"><i class="fa-regular fa-heart"></i></div>
       </div>
       <p class="font-bold text-[13px]">Bangladesh Railway Helpline </p>
       <p class="text-gray-400 text-[11px]">Bangladesh Railway</p>
