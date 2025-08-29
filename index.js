@@ -16,12 +16,13 @@ let coins = parseInt(coin.innerText);
 
 const callButtons = document.getElementsByClassName('call-btn');
 const historyBox = document.getElementById('history-sec');
-const clearBtn = document.getElementById('clear-btn');
 
+const clearBtn = document.getElementById('clear-btn');
 const clear = document.getElementById('clear');
 
 for (const btn of callButtons) {
     btn.addEventListener('click', function () {
+       
         const serviceName = this.getAttribute('data-service');
         const serviceNumber = this.getAttribute('data-number');
 
@@ -30,7 +31,8 @@ for (const btn of callButtons) {
             coin.innerText = coins;
 
             clear.innerHTML += `
-                <div class="shadow-lg rounded-lg p-7 flex justify-between items-center font-semibold" >
+              
+            <div class="shadow-lg rounded-lg p-7 flex justify-between items-center font-semibold" >
                     <p>${serviceName} <br> ${serviceNumber}</p>
                     <div>${new Date().toLocaleTimeString()}</div>
                 </div>`;
@@ -44,7 +46,7 @@ for (const btn of callButtons) {
 
 // clear history
 clearBtn.addEventListener('click', function () {
-    clear.innerHTML = ""; 
+    clear.innerHTML = ''; 
 });
 
 
